@@ -38,7 +38,7 @@ export async function GET(request: NextRequest) {
       maxAge: 60 * 60 * 24 * 30, // 30 days
     });
 
-    return NextResponse.redirect(new URL('/dashboard', request.url));
+    return NextResponse.redirect(new URL('/debug', request.url));
   } catch (err) {
     console.error('Error exchanging code for token:', err);
     return NextResponse.redirect(new URL('/?error=strava_token_exchange_failed', request.url));

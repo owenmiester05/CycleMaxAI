@@ -1,4 +1,5 @@
 import StravaLogin from './components/StravaLogin';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -12,8 +13,14 @@ export default function Home() {
             Unlock your cycling potential with AI-powered insights from your Strava data.
             Analyze your rides, get personalized recommendations, and reach new heights.
           </p>
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <StravaLogin />
+            <Link
+              href="/profile"
+              className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition-colors"
+            >
+              Setup Profile
+            </Link>
           </div>
         </div>
       </div>
