@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ai": "^6.0.6",
+    "axios": "^1.13.2",
+    "lucide-react": "^0.562.0",
+    "openai": "^6.15.0",
+    "recharts": "^3.6.0"
+  }
+}
